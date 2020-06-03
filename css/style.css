@@ -1,0 +1,871 @@
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+/*
+ ===============================
+       public style
+ ===============================
+*/
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Raleway", Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+/*
+ ===============================
+       section.logo style
+ ===============================
+*/
+.logo{
+    overflow: hidden;
+    display: flex;
+    
+}
+.logo-1{
+    width: 20%;
+   
+}
+.logo-1 h1 {
+    font-size: 1.5rem;
+    margin-left: 16px;
+}
+.logo-1 h1 span{
+    color: #66a6ff;
+    font-size: 50px;
+    
+}
+.media{
+    width: 80%;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+.media .list-media{
+    margin-bottom: 0;
+    margin-right: 2%;
+}
+.media .list-media li {
+    list-style: none;
+    display: inline-block;
+}
+.media .list-media li a{
+    
+    padding:16px 20px 20px;
+   
+    display: inline-block
+}
+.media .list-media li a i{
+    color: #c0c0c0;
+    font-size: 15px;
+}
+
+/*
+ ===============================
+       section.asid-logo style
+ ===============================
+*/
+.asid-navbar{
+    width: 300px;
+    background-color: white;
+    color: black;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    right: -303px;
+    z-index: 10;;
+    box-shadow:-3px -3px 5px #c0c0c0;
+    transition: all 1s ease-in-out;
+}
+.asid-right{
+    right: 0;
+}
+.asid-logo{
+    display: flex;
+}
+.asid-logo .nav-logo h1{
+    font-size: 1.5rem;
+}
+.asid-logo .nav-logo h1 span{
+    color: #66a6ff;
+    font-size: 50px;
+}
+.asid-logo .nav-logo{
+         text-align: center;
+         width: 70%;
+}
+.asid-logo .asid-cancel{
+    text-align: center;
+    width: 30%;
+    padding: 20px 0;
+}
+.asid-logo .asid-cancel i{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+.asid-logo .asid-cancel i:hover{
+    background-color: #66a6ff;
+    color: white;
+}
+
+.asid-list{
+    padding: 50px 0 100px;
+}
+.asid-list ul li{
+    list-style: none;
+    text-align: center;
+}
+.asid-list ul li a{
+    display: block;
+    border-bottom: 1px solid #66a6ff;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: black;
+}
+
+.asid-list ul li a:hover{
+    text-decoration: none;
+    background-color: #66a6ff;
+    color: white;
+}
+.asid-list ul .angle i{
+    margin-left: 5px;
+    color: #c0c0c0;
+    transition: all 1s ease-in-out;
+}
+
+.acord{
+    display: none;
+}
+.rotat{
+    transform: rotate(180deg);
+}
+/*
+ ===============================
+       section.navbar style
+ ===============================
+*/
+
+.navbar-1{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.navbar-1 .nav-1{
+   position: relative;
+    width: 80%;
+    background-color: white;
+    
+}
+.bloger{
+    position: absolute;
+    left: 41.9%;
+    top: 50px;
+    background-color: white;
+    /* display: none; */
+    animation: moh .5s 1 ease-in-out;
+}
+@keyframes moh{
+    0%{
+        top: 60px;
+    }
+    10%{
+      top: 59px;
+    }
+    20%{
+        top: 58px;
+    }
+    30%{
+        top: 57px ;
+    }
+    40%{
+        top:56px ;
+    }
+    50%{
+        top: 55px
+    }
+    60%{
+        top: 54px;
+    }
+    70%{
+        top:53px ;
+    }
+    80%{
+        top:52px ;
+    }
+    90%{
+        top:51px ;
+    }
+    100%{
+        top: 50px;
+    }
+}
+.bloger ul{
+    margin-bottom: 0;
+}
+.bloger ul li{
+    list-style: none;
+    text-align: center;
+}
+.bloger ul li a{
+    display: block;
+    color: black;
+    padding: 10px 30px;
+}
+.bloger ul li a:hover{
+    text-decoration: none;
+    color: #66a6ff;
+}
+.bloger ul li .lin{
+    border-bottom: 1px solid #66a6ff;
+}
+.navbar-1 .nav-1 nav a{
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+
+}
+.navbar-1 .nav-1 nav a i{
+    margin-right: 10px;
+}
+.navbar-1 .nav-1 nav a:hover{
+    text-decoration: none;
+    color: #66a6ff;
+
+}
+.navbar-1 .nav-1 nav .act{
+    color: #66a6ff;
+    
+}
+.navbar-1 .nav-2{
+    background-color: white;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-2 p{
+    padding: 0px 28px;
+    margin-bottom: 0;
+}
+.nav-2 p i{
+    padding-top: 15px;
+    padding: 13px;
+    cursor: pointer;
+}
+.nav-2 p i:hover{
+    color: #66a6ff;
+}
+.nav-2 p i:first-child{
+    padding-right: 20px;
+}
+.search{
+    
+     position: absolute;
+     background:linear-gradient(#0f0c29,#302b63,#24243e);
+     top: 15px;
+     right: 23%;
+     z-index: 100;
+     animation: rel 1s 1 ease-in-out;
+     display: none;
+     
+}
+
+@keyframes rel{
+    0%{
+        top: 65px;
+    }
+    10%{
+      top: 60px;
+    }
+    20%{
+        top: 55px;
+    }
+    30%{
+        top: 50px ;
+    }
+    40%{
+        top:45px ;
+    }
+    50%{
+        top: 40px
+    }
+    60%{
+        top: 35px;
+    }
+    70%{
+        top:30px ;
+    }
+    80%{
+        top:25px ;
+    }
+    90%{
+        top:20px ;
+    }
+    100%{
+        top: 15px;
+    }
+
+}
+.search .in-search{
+    width: 85%;
+    padding: 70px 35px 70px 70px;
+    float: left;
+
+}
+.search .in-search input{
+    padding: 8px 20px;
+    width: 575px;
+    border: none;
+    outline: none;
+
+}
+
+.search .can{
+    width: 15%;
+    font-size: 25px;
+    text-align: center;
+    float: right;
+
+}
+.search .can i{
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+/*
+ ===============================
+       section.tol style
+ ===============================
+*/
+.tol{
+    height: 755px;
+    position: relative;
+    background-color: rgba(0,0,0,.1);
+    
+    margin-bottom: 10%;
+}
+.back{
+
+    
+  
+   width: 100%;
+   min-width: 100%;
+   min-height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.title{
+    color: white;
+    
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.sign{
+    width: 80%;
+    margin: auto;
+}
+.sign .button{
+    color: white;
+    width: 35%;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #66a6ff;
+    border-radius: 30px;
+}
+.sign .button:hover{
+    background:linear-gradient(#0f0c29,#24243e,#302b63);
+    border: none;
+
+}
+.head-end{
+    width: 80%;
+    
+    position: absolute;
+    top: 100%;
+    background:linear-gradient(#48c6ef,#6f86d6);   
+    left: 50%;
+    transform: translate(-50%,-50%);
+     display: flex;
+    padding: 50px 0;
+}
+.head-end-1{
+    width: 33.333333%;
+    color: white ;
+    border-right: 1px solid #fff;
+    padding: 10px;
+}
+.head-end-1 i{
+    margin: 0px 10px;
+}
+.head-1{
+    border: none;
+}
+
+/* .pol{
+    
+    background:linear-gradient(#89f7fe,#66a6ff);
+   
+} */
+
+/*
+ ===============================
+       section.tired style
+ ===============================
+*/
+.tired{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.tired-1{
+    width: 50%;
+   
+    
+    padding: 20px;
+
+    
+}
+.tired-1 p{
+    color: #999;
+}
+.tired-1 p a{
+    color: black;
+}
+.tired-1 p a:hover{
+    text-decoration: none;
+    color: #66a6ff;
+}
+.tired-2 video{
+    width: 100%;
+    height: 405px;;
+}
+
+.tired-2{
+    width: 50%;
+    /* background-image: url(image/m6.jpg);
+    background-size: cover;
+    height: 400px;; */
+    height: 405px;
+  }
+/*
+ ===============================
+       section.partion style
+ ===============================
+*/
+.partion{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.partion-1{
+    width: 25%;
+    text-align: center;
+}
+
+.partion-1 span{
+    font-weight: 900;
+    font-size: 60px;
+}
+.partion-1 p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #838383;
+    line-height: 2.1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ ===============================
+       section.school style
+ ===============================
+*/
+.school-0{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    overflow: hidden;
+}
+.school-1{
+    width: 50%;
+    overflow: hidden;
+}
+.school-1 p{
+    font-size: 16px;
+    padding: 10px 50px;
+}
+.school-1 h4{
+       font-size: 30px;
+       padding: 10px 15px;
+}
+
+h3,h2,h1{
+    font-weight: 900;
+}
+
+.past{
+    background: linear-gradient(90deg, #e94086 0%, #e5925a 100%);
+   width: 80%;
+   margin: auto;
+    color: white;
+
+}
+.past-1{
+    background: linear-gradient(90deg, #7349cc 0%, #e163e4 100%);
+    color: white;
+    width: 80%;
+   margin: auto;
+}
+.past-2{
+    background: linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+    color: white;
+    width: 80%;
+   margin: auto;
+}
+
+.hor{
+    margin: 5rem auto;
+    width: 80%;
+    background-color: #0f0c29
+
+}
+
+
+
+
+
+
+
+/*
+ ===============================
+       section.neta style
+ ===============================
+*/
+.full-neta{
+    background-image: url(../image/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    color: white;
+    position: relative;
+  }
+  .full-neta-1{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: rgba(0,0,0,.9)
+}
+.neta{
+    width: 80%;
+    margin:100px auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap; 
+}
+.neta-1{
+    color: black;
+    width: 50%;
+    color: white;
+    display: flex;
+    margin-bottom: 3rem;
+}
+.neta-1 .neta-1-1 img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 1rem 0;
+}
+.neta-1-1{
+    width: 30%;
+    text-align: center;
+}
+.neta-1-2{
+    width: 70%;
+}
+.neta-1-2 p{
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+
+
+/*
+ ===============================
+       section.application style
+ ===============================
+*/
+
+.comp{
+    display: flex;
+    /* width: 80%; */
+    margin: 20px auto;
+}
+.comp-1,.comp-2{
+    width: 50%;
+}
+/* .pure{
+    border-top: 1px solid #66a6ff;
+    border-bottom: 1px solid #66a6ff;
+} */
+.pure,.pure1,.pure2{
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+    opacity: .3;
+}
+
+.icon{
+    color: #66a6ff;
+}
+.icon-1{
+    border-top: 1px solid #66a6ff;
+    opacity: 1;
+    border-bottom: 1px solid #66a6ff;
+}
+.pure h3 ,.pure1 h3,.pure2 h3{
+    font-size: 20px;
+}
+.pure p ,.pure1 p,.pure2 p{
+    font-size: 15px;
+}
+.scan{
+    width: 15%;
+}
+.scan-1{
+    width: 85%;
+}
+.comp-imag-1 img,.comp-imag-2 img{
+    display: none;
+}
+.comp-2{
+    
+    background-color: #ccc;
+    position: relative;
+}
+.comp-imag{
+    position: absolute;
+    top: 3%;
+    width: 90%;
+   bottom: 7%;
+    right: 0;
+}
+/*
+ ===============================
+       section.price style
+ ===============================
+*/
+
+.dad-price{
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+   
+}
+.price-1,.price-2,.price-3{
+    width: 33.333333%;
+    
+    transform: scale(.8);
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+     background-image: url(../image/2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+
+
+
+}
+
+.price-1{
+    background-image: url(../image/1.jpg);
+}
+.price-3{
+    background-image: url(../image/3.jpg);
+}
+.scal{
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+.price-1 h3,.price-2 h3,.price-3 h3{
+    background: linear-gradient(90deg, #7349cc 0%, #e163e4 100%);
+   padding: 10px;
+    color: #fff;
+}
+.price-1 h4,.price-2 h4,.price-3 h4{
+    font-size: 17px;
+}
+.break{
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #66a6ff;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: transparent;
+}
+.price-end{
+    font-size: 20px;
+    color: white;
+}
+.price-end span:first-child{
+    font-size: 50px;
+}
+.free{
+    font-size: 17px;
+}
+.free a{
+    color: white;
+    text-decoration: underline;
+    
+}
+/*
+ ===============================
+       section.footer style
+ ===============================
+*/
+
+.footer{
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../image/m6.jpg);
+    background-attachment: fixed;
+  }
+footer{
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+}
+.cont{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+}
+.cont-1{
+    width: 33.3333333%;
+    color: #fff;
+    padding: 0 14px;
+}
+.cont-1 h3{
+    font-size: 1.5rem
+}
+.cont-1 h3 span{
+  
+    color: #66a6ff;
+}
+.cont-1 a{
+    display: block;
+    color: #f1f1f1;
+  font-size: 21px;
+
+}
+.cont-1 p{
+   font-size: 21px;
+   color: #f1f1f1;
+}
+.cont-1 a:hover{
+    color: #66a6ff;
+    
+}
+.copy{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+.copy-1{
+    width: 50%;
+    color: #f1f1f1;
+}
+.copy-1:last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+.copy-1:last-child ul li{
+    display: inline-block;
+    list-style: none;
+}
+.copy-1:last-child ul li a{
+              
+    color: white;
+    padding: 10px;
+}
+.copy-1:last-child ul li a:hover{
+         text-decoration: none;
+         color: #66a6ff;
+}
+.top{
+    position: relative;
+    display: none;
+}
+.top p a i{
+    padding: 10px;
+    background-color: #0f0c29;
+    color: white;
+    position: fixed;
+    right: 4%;
+    border-radius: 6px;
+
+    bottom: 15%;
+}
+.top p a i:hover{
+    background-color: black;
+    color: #fff;
+}
